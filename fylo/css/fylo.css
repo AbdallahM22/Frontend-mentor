@@ -1,0 +1,213 @@
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+        
+        
+    }
+}
+/* Start Design  */
+.design {
+    height: 100vh;
+    position: relative;
+    background-color: hsl(229, 57%, 11%);
+}
+.design .background {
+    position: absolute;
+    background-image: url("../images/bg-desktop.png");
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+.design .background img {
+    width: 100%;
+    height: 100%;
+}
+
+.design .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 41vh;
+    position: relative;
+    font-size: 14px;
+}
+
+.design .container .left {
+    background-color: hsl(229, 56%, 26%);
+    padding: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border-top-right-radius: 60px;
+    margin-right: 20px;
+}
+.design .container .left .logo {
+
+}
+.design .container .left .logo img {
+    width: 90px;
+    margin-bottom: 20px;
+    
+}
+.design .container .left .icons {
+    display: flex;
+}
+.design .container .left .icons .icon {
+    background-color: #0B122B;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.design .container .left .icons .icon img {
+    width: 15px;
+    height: 15px;
+}
+.design .container .right {
+    background-color: #1D2D69;
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    bottom: -12px;
+}
+.design .container .right > p {
+    color: #6773AD;
+    font-size: 12px;
+}
+.design .container .right > p span {
+    color: hsl(243, 100%, 93%);
+    
+}
+.design .container .right .loading {
+    background-color: #161D4B;
+    width: 100%;
+    height: 10px;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+.design .container .right .loading span {
+    height: 100%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: block;
+    border-radius: 6px;
+    position: relative;
+}
+.design .container .right .loading span::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background-color: white;
+}
+.design .container .right .storage {
+    color: hsl(243, 100%, 93%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.design .container .right .storage p {
+
+}
+.design .container .right .rest {
+    background-color: white;
+    width: fit-content;
+    padding: 13px;
+    position: absolute;
+    top: -36px;
+    right: 20px;
+    border-radius: 5px;
+}
+.design .container .right .rest p {
+    font-size: 10px;
+    color: hsl(229, 7%, 55%);
+}
+.design .container .right .rest p span {
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    position: relative;
+}
+.design .container .right .rest p span::after {
+    content: '';
+    position: absolute;
+    border: 18px solid white;
+    border-color: transparent white transparent transparent;
+    bottom: -27px;
+    right: -50px;
+}
+@media(max-width: 767px) {
+    .design .background {
+        background-image: url("../images/bg-mobile.png");
+        background-size: cover;
+        height: 100%;
+    }
+    .design .container {
+        flex-direction: column;
+    }
+    .design .container .left {
+        margin-right: 0;
+        width: 280px;
+        padding: 35px;
+    }
+    .design .container .right {
+        width: 280px;
+        padding: 35px;
+        padding-bottom: 50px;
+    }
+    .design .container .right .rest {
+        top: calc(100% - 29px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        text-align: center;
+    }
+    .design .container .right .rest p span::after {
+        display: none;
+    }
+    .design .container .right .rest p {
+        font-size: 14px;
+    }
+    .design .container .right .rest p span {
+        font-size: 30px;
+    }
+}
+/* End Design  */

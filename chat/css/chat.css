@@ -1,0 +1,269 @@
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+        
+        
+    }
+}
+
+/* Start Chat */
+.chat {
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.chat .container {
+    padding-top: 40px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.chat .container .app-container {
+    width: 295px;
+    /* padding: 10px; */
+    background-color: #F5F3F8;
+    border: 10px solid white;
+    border-radius: 30px;
+    margin-right: 100px;
+    position: relative;
+}
+.chat .container .app-container::before {
+    content: "";
+    position: absolute;
+    width: 196%;
+    height: 657px;
+    background-image: linear-gradient(to bottom, #D942FF, #953BFF);
+    border-bottom-left-radius: 323px;
+    border-bottom-right-radius: 323px;
+    left: -401px;
+    top: -100px;
+    z-index: -1;
+}
+.chat .container .app-container .head {
+    position: relative;
+    background-image: linear-gradient(to right, #953BFF,#D942FF);
+    padding: 35px 10px 15px;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.chat .container .app-container .head::before {
+    content: "";
+    position: absolute;
+    width: 56%;
+    height: 25px;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.chat .container .app-container .head .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat .container .app-container .head .user .user-content {
+    display: flex;
+    align-items: center;
+}
+.chat .container .app-container .head .user .user-content i {
+    margin-right: 5px;
+}
+.chat .container .app-container .head .user i {
+    font-size: 11px;
+}
+.chat .container .app-container .head .user img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 5px;
+}
+.chat .container .app-container .head .user .name {
+
+}
+.chat .container .app-container .head .user .name h4 {
+
+}
+.chat .container .app-container .head .user .name p {
+    font-size: 11px;
+    color: #ede5ee99;
+}
+.chat .container .app-container .chat-content {
+    padding: 10px;
+    /* background-color: #F5F3F8; */
+}
+.chat .container .app-container .conversation {
+    
+}
+.chat .container .app-container .conversation .one {
+
+}
+.chat .container .app-container .conversation .one p,
+.chat .container .app-container .conversation .three > p {
+    background-color: #EDE5F4;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 10px;
+    width: 59%;
+    color: #be88da;
+}
+.chat .container .app-container .conversation .two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.chat .container .app-container .conversation .two .images {
+
+}
+.chat .container .app-container .conversation .two .images img {
+    width: 50px;
+    border-radius: 15px;
+    margin: 3px;
+}
+.chat .container .app-container .conversation .two p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 10px;
+    width: 59%;
+    color: black;
+}
+.chat .container .app-container .conversation .three {
+
+}
+.chat .container .app-container .conversation .three p {
+
+}
+.chat .container .app-container .conversation .three .offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,#D942FF, #953BFF);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+}
+.chat .container .app-container .conversation .three .offer i {
+
+}
+.chat .container .app-container .conversation .three .offer p {
+    font-size: 13px;
+    transform: translateX(-15px);
+}
+.chat .container .app-container .conversation .three .offer span {
+
+}
+.chat .container .app-container .send {
+    position: relative;
+    margin-top: 20px;
+}
+.chat .container .app-container .send input {
+    border: none;
+    color: #272727;
+    outline: none;
+    padding: 15px;
+    border-radius: 18px;
+    border-bottom: outset;
+    border-color: #953bffab;
+    width: 100%;
+}
+.chat .container .app-container .send i {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 11px;
+    color: white;
+    background-color: #3F2C54;
+    padding: 8px;
+    border-radius: 50%;
+}
+.chat .container .text {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.chat .container .text h2 {
+    color: #382948
+}
+.chat .container .text p {
+    font-size: 14px;
+    color: #8b8b8c;
+    margin: 20px auto;
+    
+}
+@media (max-width: 767px) {
+
+    .chat::before {
+        width: 60%;
+        height: 64%;
+        background-image: linear-gradient(to bottom, #D942FF, #953BFF);
+        border-bottom-left-radius: 250px;
+        border-bottom-right-radius: 249px;
+        left: -49px;
+    }
+    .chat .container .text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .chat .container .text p {
+        font-size: 14px;
+        color: #8b8b8c;
+        margin: 20px auto;
+        width: 60%;
+    }
+    .chat .container .app-container {
+        margin: 50px auto;
+    }
+}
+@media(min-width: 768px) {
+    .chat .container {
+        display: flex;
+    }
+}
+/* End Chat */

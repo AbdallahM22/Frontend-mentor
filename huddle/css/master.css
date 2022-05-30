@@ -1,0 +1,177 @@
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small devices (tablets, 768px and up) */
+/* @media (min-width: 375px) { 
+    .container {
+        width: 370px;
+    }
+} */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+    }
+}
+/* Start Huddle */
+.huddle {
+    /* background-image: url("../images/bg-desktop.svg"); */
+    /* background-size: cover; */
+    /* height: 100vh; */
+    background-color: hsl(257, 40%, 49%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.huddle > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (min-width: 376px) {
+    .huddle > img {
+        display: none;
+    }
+    .huddle {
+        background-image: url("../images/bg-desktop.svg"); 
+        background-size: cover;
+    }
+}
+.huddle .container {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+    position: relative;
+}
+.huddle .container .logo {
+    margin-bottom: 70px;
+}
+.huddle .container .logo img {
+    width: 150px;
+}
+.huddle .container .image {
+    width: 330px;
+    margin: 0 auto 70px;
+}
+.huddle .container .image img {
+    width: 100%;
+}
+
+.huddle .container .text h3 {
+    color: white;
+    font-size: 20px;
+    width: 220px;
+    /* text-align: center; */
+    margin: 15px auto;
+}
+.huddle .container .text p {
+    font-family: "open sans";
+    color: #cdcdcd;
+}
+@media (max-width: 375px) {
+    
+}
+@media (max-width: 767px) {
+    .huddle .container .text {
+        text-align: center;
+    }
+    .huddle .container .text p {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+.huddle .container .text a {
+    display: block;
+    text-decoration: none;
+    margin: 25px auto;
+    width: 200px;
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 30px;
+}
+.huddle .container .text a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.huddle .container .social {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto 0;
+    color: white;
+    font-size: 17px;
+}
+.huddle .container .social i {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 34px;
+    text-align: center;
+    padding: 6px;
+    margin: 5px
+}
+.huddle .container .social i:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+@media(min-width: 768px) {
+    .text-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .huddle .container .image {
+        width: 570px;
+        margin: 0;
+    }
+    .huddle .container .text {
+        width: 440px;
+        margin-left: 20px;
+    }
+    .huddle .container .text h3 {
+        margin: 20px 0;
+    }
+    .huddle .container .text p {
+        font-size: 12px;
+    }
+    .huddle .container .text a {
+        margin: 25px 0;
+        width: 150px;
+    }
+    .huddle .container .social {
+        justify-content: flex-end;
+    }
+}
+/* End Huddle */

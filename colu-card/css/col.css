@@ -1,0 +1,124 @@
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start Card */
+.card {
+    background-color: #fff;
+}
+
+.card .container .col-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    max-width: 675px;
+    margin: 0 auto;
+}
+.card .container .col {
+    padding: 30px;
+    color: white;
+}
+.card .container .col:first-of-type {
+    background-color: #e28525;
+}
+
+.card .container .col:nth-of-type(2) {
+    background-color: #016972;
+}
+.card .container .col:last-of-type {
+    background-color: #00403f;
+}
+@media (min-width: 992px) {
+    .card .container .col:first-of-type {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .card .container .col:last-of-type {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+@media (max-width: 767px) {
+    .card .container .col:first-of-type {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .card .container .col:last-of-type {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+.card .container .col img{
+    width: 45px;
+}
+.card .container .col h2 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.card .container .col p {
+    font-size: 13px;
+    padding-bottom: 50px;
+    width: 175px;
+    line-height: 1.5;
+}
+.card .container .col a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 13px;
+}
+.card .container .col:first-of-type a {
+    color: #e28525;
+}
+.card .container .col:nth-of-type(2) a {
+    color: #016972;
+}
+.card .container .col:last-of-type a {
+    color: #00403f;
+}
+/* End Card */

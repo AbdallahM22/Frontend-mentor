@@ -1,0 +1,138 @@
+/* Start Global Rules  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1170px;
+    }
+}
+/* Start Order */
+.order {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+    height: 100vh;
+}
+@media (max-width: 767px) {
+    .order {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+.order .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.order .container .content {
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.order .container .content .image img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.order .container .content .text-container {
+    padding: 0 25px
+}
+.order .container .content .text {
+    text-align: center;
+}
+.order .container .content .text h2 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+}
+.order .container .content .text p {
+    width: 232px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 20px;
+}
+.order .container .content .text2 {
+    display: flex;
+    background-color: #f8f9fe;
+    padding: 17px 0;
+}
+.order .container .content .text2 img {
+    width: 30px;
+    margin: 0 20px;
+}
+.order .container .content .text2 .text3 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.order .container .content .text2 .text3 .text3-content h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.order .container .content .text2 .text3 .text3-content p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+.order .container .content .text2 .text3 a {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.order .container .content .buttons {
+    text-align: center;
+    padding: 20px 0;
+}
+.order .container .content .buttons a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+}
+.order .container .content .buttons a:first-of-type {
+    background-color: #382ae1;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 45px;
+    border-radius: 10px;
+}
+.order .container .content .buttons a:last-of-type {
+    color: #aaadb9;
+    margin-top: 12px;
+}
+/* End Order */
